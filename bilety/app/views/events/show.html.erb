@@ -1,2 +1,30 @@
-<h1>Events#show</h1>
-<p>Find me in app/views/events/show.html.erb</p>
+<p>
+  <strong>Artysta:</strong>
+  <%= @event.artist %>
+</p>
+
+<p>
+  <strong>Opis:</strong>
+  <%= @event.description %>
+</p>
+
+<p>
+  <strong>Cena niższa:</strong>
+  <%= @event.price_low %>
+</p>
+
+<p>
+  <strong>Cena wyższa:</strong>
+  <%= @event.price_high %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @event.event_date %>
+</p>
+
+
+<div class='nav'>
+<%= link_to 'Edytuj', edit_event_path(@event) %> |
+<%= link_to 'Cofnij', event_path %>
+</div>
