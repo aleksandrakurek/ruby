@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'events/show'
+
+  get 'events/index'
+
+  get 'events/create'
+
   resources :tickets
 
   # The priority is based upon order of creation: first created -> highest priority.
