@@ -7,7 +7,6 @@ class CreateTickets < ActiveRecord::Migration
       t.decimal :price
       t.string :email_address
       t.string :phone
-
       t.timestamps
     end
   end
